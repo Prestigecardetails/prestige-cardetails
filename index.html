@@ -7,6 +7,14 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <style>
+    img {
+  filter: brightness(0) invert(1); /* turns icons white */
+  transition: 0.3s ease;
+}
+
+img:hover {
+  opacity: 0.7;
+}
     a {
   color: #000; /* or white if background is dark */
   font-weight: 500;
@@ -101,14 +109,21 @@ a:visited {
     </p>
   </section>
 
-  <section class="section">
-    <h2>Contact</h2>
-    <p class="cta">
-      Call or message Finn directly to book: <br />
-      <a href="tel:0416419441">0416 419 441</a><br />
-      Contact us on <a href="https://www.instagram.com/prestigecardetails/">Instagram</a> or <a href="https://www.facebook.com/profile.php?id=61576457576642&ref=pl_edit_xav_ig_profile_page_web">Facebook</a>
-    </p>
-  </section>
+ <section class="section">
+  <h2>Contact</h2>
+  <p class="cta">
+    Call or message Finn directly to book: <br />
+    <a href="tel:0416419441">0416 419 441</a>
+  </p>
+  <div style="margin-top: 1rem;">
+    <a href="https://www.instagram.com/prestigecardetails/" target="_blank" style="margin-right: 15px;">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" width="30" height="30" style="vertical-align: middle;">
+    </a>
+    <a href="https://www.facebook.com/profile.php?id=61576457576642&ref=pl_edit_xav_ig_profile_page_web" target="_blank">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook" width="30" height="30" style="vertical-align: middle;">
+    </a>
+  </div>
+</section>
 
   <footer class="contact">
     <p>&copy; 2025 Prestige Car Details. Built with discipline and style.</p>
