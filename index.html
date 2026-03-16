@@ -1,390 +1,579 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Prestige Car Details</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <style>
-    a {
-      color: #fff;
-      text-decoration: none;
-      font-weight: 600;
-      display: inline-block;
-      margin-top: 0.3rem;
-    }
-    .lined {
-      border-left: 5px solid #fff;
-      padding-left: 1rem;
-    }
-    img:hover {
-      opacity: 0.7;
-    }
-    a {
-      color: #000; /* or white if background is dark */
-      font-weight: 500;
-    }
-    a {
-      color: inherit;
-      text-decoration: none;
-    }
-    a:visited {
-      color: inherit;
-    }
-    @font-face {
-      font-family: 'Pelita Grande Std';
-      src: local('Pelita Grande Std'), url('PelitaGrandeStd.woff2') format('woff2');
-      font-weight: normal;
-      font-style: normal;
-    }
-    body {
-      margin: 0;
-      font-family: 'Pelita Grande Std', sans-serif;
-      background-color: #000;
-      color: #fff;
-    }
-    header {
-      background-color: #000;
-      padding: 2rem;
-      text-align: center;
-      border-bottom: 3px solid #fff;
-      position: relative;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 2.5rem;
-      color: #fff;
-    }
-    /* BOOK NOW button in header */
-    .book-now-wrapper {
-  margin-top: 1.5rem;
-}
-
-.book-now-btn {
-  background: #fff;
-  color: #000;
-  padding: 0.6rem 1.2rem;
-  font-weight: 700;
-  border-radius: 5px;
-  cursor: pointer;
-  border: none;
-  transition: background-color 0.3s ease;
-  text-transform: uppercase;
-}
-.book-now-btn:hover {
-  background-color: #ddd;
-}
-    .book-now-btn:hover {
-      background-color: #ddd;
-    }
-    .section {
-      padding: 3rem 2rem;
-      max-width: 800px;
-      margin: auto;
-    }
-    .lined {
-      color: #fff;
-      margin-bottom: 1rem;
-      border-left: 5px solid #fff;
-      padding-left: 1rem;
-    }
-    .section p {
-      line-height: 1.6;
-    }
-    .contact {
-      background-color: #111;
-      color: #fff;
-      padding: 2rem;
-      text-align: center;
-      border-top: 1px solid #fff;
-    }
-    .contact a {
-      color: #fff;
-      text-decoration: none;
-      font-weight: 600;
-    }
-    .cta {
-      margin-top: 2rem;
-      font-size: 1.2rem;
-    }
-    /* Gallery styles */
-    .gallery {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 1rem;
-      margin-top: 2rem;
-    }
-    .gallery img {
-      max-width: 250px;
-      width: 100%;
-      border-radius: 6px;
-      box-shadow: 0 0 8px rgba(255, 255, 255, 0.3);
-      cursor: pointer;
-      transition: transform 0.3s ease;
-    }
-    .gallery img:hover {
-      transform: scale(1.05);
-      opacity: 0.8;
-    }
-    /* Booking form modal */
-    #bookingModal {
-      display: none;
-      position: fixed;
-      z-index: 999;
-      left: 0;
-      top: 0;
-      width: 100%;
-      height: 100%;
-      overflow: auto;
-      background-color: rgba(0,0,0,0.8);
-      justify-content: center;
-      align-items: center;
-      padding: 2rem;
-    }
-    #bookingModal.active {
-      display: flex;
-    }
-    .booking-form {
-      background-color: #111;
-      padding: 2rem;
-      border-radius: 10px;
-      max-width: 400px;
-      width: 100%;
-      color: #fff;
-      box-shadow: 0 0 15px rgba(255,255,255,0.2);
-      position: relative;
-    }
-    .booking-form h3 {
-      margin-top: 0;
-      margin-bottom: 1rem;
-      text-align: center;
-    }
-    .booking-form label {
-      display: block;
-      margin: 0.8rem 0 0.3rem;
-    }
-    .booking-form input,
-    .booking-form textarea {
-      width: 100%;
-      padding: 0.6rem;
-      border: none;
-      border-radius: 4px;
-      margin-bottom: 1rem;
-      font-size: 1rem;
-      font-family: inherit;
-    }
-    .booking-form button {
-      background: #fff;
-      color: #000;
-      padding: 0.8rem 1.2rem;
-      border: none;
-      border-radius: 5px;
-      font-weight: 700;
-      cursor: pointer;
-      width: 100%;
-      font-size: 1.1rem;
-      transition: background-color 0.3s ease;
-    }
-    .booking-form button:hover {
-      background-color: #ddd;
-    }
-    .close-btn {
-      position: absolute;
-      top: 0.6rem;
-      right: 0.8rem;
-      font-size: 1.5rem;
-      color: #fff;
-      background: transparent;
-      border: none;
-      cursor: pointer;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prestige Car Details | Mobile Ceramic Coating & Polishing</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    },
+                    colors: {
+                        sand: '#f5f5f0',
+                        charcoal: '#1a1a1a',
+                        stone: '#8c8c8c',
+                    },
+                    animation: {
+                        'fade-in': 'fadeIn 1s ease-out',
+                        'slide-up': 'slideUp 0.8s ease-out',
+                    },
+                    keyframes: {
+                        fadeIn: {
+                            '0%': { opacity: '0' },
+                            '100%': { opacity: '1' },
+                        },
+                        slideUp: {
+                            '0%': { transform: 'translateY(30px)', opacity: '0' },
+                            '100%': { transform: 'translateY(0)', opacity: '1' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .grain {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            pointer-events: none;
+            z-index: 50;
+            opacity: 0.03;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+        }
+        .counter-value {
+            font-variant-numeric: tabular-nums;
+        }
+        .wave-divider {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            overflow: hidden;
+            line-height: 0;
+        }
+        .wave-divider svg {
+            position: relative;
+            display: block;
+            width: calc(100% + 1.3px);
+            height: 60px;
+        }
+        .wave-divider .shape-fill {
+            fill: #f5f5f0;
+        }
+        html {
+            scroll-padding-top: 80px;
+        }
+        .package-content {
+            display: none;
+            animation: fadeIn 0.5s ease-out;
+        }
+        .package-content.active {
+            display: block;
+        }
+        .tier-btn {
+            transition: all 0.3s ease;
+        }
+        .tier-btn.active {
+            background-color: white;
+            color: #1a1a1a;
+            border-color: white;
+        }
+        .coming-soon-overlay {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(4px);
+        }
+    </style>
 </head>
-<body>
-  <header>
-<h1>Prestige Car Details</h1>
-<p>Efficient. Precise. Mobile.</p>
-<div class="book-now-wrapper">
-  <button class="book-now-btn" id="openBookingBtn">BOOK NOW</button>
-</div>
-  </header>
-  <!-- Compact Image Slider -->
-<section class="section" style="padding-top: 2rem;">
-  <div class="slider" style="display: flex; overflow-x: auto; gap: 1rem; scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch;">
-    <img src="gallery1.jpeg" alt="Foam covered Audi" style="width: 250px; flex: 0 0 auto; border-radius: 6px; box-shadow: 0 0 8px rgba(255, 255, 255, 0.3); scroll-snap-align: center;" />
-    <img src="DSC06199.jpg" alt="Another car" style="width: 250px; flex: 0 0 auto; border-radius: 6px; box-shadow: 0 0 8px rgba(255, 255, 255, 0.3); scroll-snap-align: center;" />
-     <img src="DSC06671.jpg" alt="mitsu sport" style="width: 250px; flex: 0 0 auto; border-radius: 6px; box-shadow: 0 0 8px rgba(255, 255, 255, 0.3); scroll-snap-align: center;" />
-    <!-- You can add more images below the same way -->
-    <!-- Example:
-    <img src="car2.jpeg" alt="Another car" style="width: 250px; flex: 0 0 auto; border-radius: 6px; box-shadow: 0 0 8px rgba(255, 255, 255, 0.3); scroll-snap-align: center;" />
-    -->
-  </div>
-  <section class="section">
-    <h2 class="lined">What We Do</h2>
-    <p>
-      We specialise in high-end mobile detailing for prestige vehicles across the Tweed and Gold Coast regions. No polishing or ceramic coating — just pure focus on deep, thorough interior and exterior detailing using air compression, full vacuum wipe-downs, and precise finishing.
-    </p>
-  </section>
+<body class="bg-white text-charcoal antialiased overflow-x-hidden">
 
-  <section class="section">
-    <h2 class="lined">Why Choose Us</h2>
-    <p>
-      Inspired by German standards of excellence, we value efficiency, precision, and presentation. Every detail matters — from the door jambs to the dash. We arrive on time, work clean, and leave your vehicle feeling showroom-ready.
-    </p>
-  </section>
+    <!-- Grain Overlay -->
+    <div class="grain"></div>
 
-  <section class="section">
-    <h2 class="lined">Presentation & Professionalism</h2>
-    <p>
-      We wear an all-black professional uniform. Branded business shirts designed for a clean, premium look. Gloves are always worn for hygiene and care. We're friendly, convenient, and take pride in our conduct. Payments are seamless with tap-to-pay via phone. We also accept cash, bank transfer, and provide invoices. ABN registered for your peace of mind.
-    </p>
-  </section>
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-charcoal z-40 border-b border-white/10">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center">
+                <img src="your-logo.png" 
+                     alt="Prestige Car Details" 
+                     class="h-10 md:h-12 w-auto object-contain filter invert"
+                     onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                <span class="font-serif text-2xl tracking-tight text-white hidden">Prestige Car Details</span>
+            </div>
+            
+            <div class="hidden md:flex space-x-8 text-sm font-medium tracking-wide text-white/80">
+                <a href="#about" class="hover:text-white transition-colors">About</a>
+                <a href="#services" class="hover:text-white transition-colors">Services</a>
+                <a href="#stats" class="hover:text-white transition-colors">Results</a>
+                <a href="#contact" class="hover:text-white transition-colors">Contact</a>
+            </div>
+            <button onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})" 
+                    class="bg-white text-charcoal px-6 py-2 text-sm font-medium hover:bg-gray-200 transition-colors">
+                Book Now
+            </button>
+        </div>
+    </nav>
 
-<section class="section">
-  <h2 class="lined">Prestige Packages</h2>
+    <!-- Hero Section - White Background -->
+    <section class="relative min-h-screen flex items-center justify-center pt-20 pb-32 overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <div class="absolute inset-0 bg-gradient-to-b from-white via-white to-sand"></div>
+            <div class="absolute top-1/4 right-0 w-96 h-96 bg-gray-50 rounded-full blur-3xl opacity-50"></div>
+            <div class="absolute bottom-1/4 left-0 w-64 h-64 bg-gray-100 rounded-full blur-3xl opacity-30"></div>
+        </div>
 
-  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem;">
-    <div style="background-color: #111; padding: 1.5rem; border-radius: 12px; box-shadow: 0 0 10px rgba(255,255,255,0.1);">
-      <h3 style="margin-top: 0;">Prestige Small</h3>
-      <p style="color: #facc15; font-weight: bold;">$250 – $270</p>
-      <p style="font-size: 0.9rem;">E.g. Golf, Corolla, A-Class, i30, 1 Series</p>
-    </div>
+        <div class="relative z-10 max-w-4xl mx-auto px-6 text-center">
+            <p class="text-stone text-sm tracking-[0.3em] uppercase mb-6 animate-fade-in">Gold Coast - Byron Bay</p>
+            <h1 class="font-serif text-5xl md:text-7xl lg:text-8xl leading-[0.9] mb-8 animate-slide-up">
+                Perfectionists<br>
+                <span class="italic font-light">on</span> Demand
+            </h1>
+            <p class="text-lg md:text-xl text-stone max-w-2xl mx-auto mb-12 font-light leading-relaxed animate-slide-up" style="animation-delay: 0.2s">
+                Mobile ceramic coating and paint correction for prestige vehicles. 
+                We bring showroom standards to your driveway.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center animate-slide-up" style="animation-delay: 0.4s">
+                <button onclick="document.getElementById('services').scrollIntoView({behavior: 'smooth'})" 
+                        class="bg-charcoal text-white px-8 py-4 text-sm tracking-widest uppercase hover:bg-black transition-all duration-300">
+                    View Packages
+                </button>
+                <button onclick="document.getElementById('about').scrollIntoView({behavior: 'smooth'})" 
+                        class="border border-charcoal text-charcoal px-8 py-4 text-sm tracking-widest uppercase hover:bg-charcoal hover:text-white transition-all duration-300">
+                    Our Approach
+                </button>
+            </div>
+        </div>
 
-    <div style="background-color: #111; padding: 1.5rem; border-radius: 12px; box-shadow: 0 0 10px rgba(255,255,255,0.1);">
-      <h3 style="margin-top: 0;">Prestige Medium</h3>
-      <p style="color: #facc15; font-weight: bold;">$270 – $290</p>
-      <p style="font-size: 0.9rem;">E.g. C-Class, 3 Series, Q3, Tucson, RAV4</p>
-    </div>
+        <div class="wave-divider">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+            </svg>
+        </div>
+    </section>
 
-    <div style="background-color: #111; padding: 1.5rem; border-radius: 12px; box-shadow: 0 0 10px rgba(255,255,255,0.1);">
-      <h3 style="margin-top: 0;">Prestige Large</h3>
-      <p style="color: #facc15; font-weight: bold;">$290 – $315</p>
-      <p style="font-size: 0.9rem;">E.g. Tiguan, X3, Range Rover, CX-5, Cayenne</p>
-    </div>
+    <!-- Live Stats Section -->
+    <section id="stats" class="bg-sand py-24 relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-8 text-center">
+                <div class="group">
+                    <div class="font-serif text-6xl md:text-7xl mb-2 counter-value" data-target="61">0</div>
+                    <div class="h-px w-12 bg-charcoal mx-auto mb-4 group-hover:w-24 transition-all duration-500"></div>
+                    <p class="text-sm tracking-widest uppercase text-stone">Details Completed</p>
+                </div>
+                <div class="group">
+                    <div class="font-serif text-6xl md:text-7xl mb-2 counter-value" data-target="98">0</div>
+                    <div class="text-2xl font-serif inline-block -mt-8">%</div>
+                    <div class="h-px w-12 bg-charcoal mx-auto mb-4 group-hover:w-24 transition-all duration-500"></div>
+                    <p class="text-sm tracking-widest uppercase text-stone">Client Satisfaction</p>
+                </div>
+                <div class="group">
+                    <div class="font-serif text-6xl md:text-7xl mb-2 counter-value" data-target="2">0</div>
+                    <div class="h-px w-12 bg-charcoal mx-auto mb-4 group-hover:w-24 transition-all duration-500"></div>
+                    <p class="text-sm tracking-widest uppercase text-stone">Years in Business</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <div style="background-color: #111; padding: 1.5rem; border-radius: 12px; box-shadow: 0 0 10px rgba(255,255,255,0.1);">
-      <h3 style="margin-top: 0;">Prestige X-Large</h3>
-      <p style="color: #facc15; font-weight: bold;">$325 – $350</p>
-      <p style="font-size: 0.9rem;">E.g. Prado, X5, GLE, Defender, LandCruiser</p>
-    </div>
-  </div>
+    <!-- About Section -->
+    <section id="about" class="py-24 md:py-32 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-16 items-start">
+                <div class="sticky top-32">
+                    <h2 class="font-serif text-4xl md:text-5xl mb-6">What We Do</h2>
+                    <div class="w-16 h-px bg-charcoal mb-8"></div>
+                </div>
+                <div class="space-y-12">
+                    <div class="prose prose-lg max-w-none">
+                        <p class="text-xl leading-relaxed text-stone font-light">
+                            We specialise in high-end mobile detailing for prestige vehicles across the Gold Coast and Byron Bay regions. 
+                            No shortcuts — just pure focus on deep, thorough interior and exterior detailing using air compression, 
+                            full vacuum wipe-downs, and precise finishing.
+                        </p>
+                    </div>
+                    <div>
+                        <h3 class="font-serif text-2xl mb-4">Why Choose Us</h3>
+                        <p class="text-stone leading-relaxed mb-6">
+                            Inspired by German standards of excellence, we value efficiency, precision, and presentation. 
+                            Every detail matters — from the door jambs to the dash. We arrive on time, work clean, and leave 
+                            your vehicle feeling showroom-ready.
+                        </p>
+                    </div>
+                    <div class="bg-sand p-8 md:p-10">
+                        <h3 class="font-serif text-2xl mb-4">Presentation & Professionalism</h3>
+                        <ul class="space-y-4 text-stone">
+                            <li class="flex items-start">
+                                <span class="mr-3 text-charcoal">—</span>
+                                All-black professional uniform with branded business shirts
+                            </li>
+                            <li class="flex items-start">
+                                <span class="mr-3 text-charcoal">—</span>
+                                Gloves always worn for hygiene and care
+                            </li>
+                            <li class="flex items-start">
+                                <span class="mr-3 text-charcoal">—</span>
+                                Seamless tap-to-pay via phone, cash, or bank transfer
+                            </li>
+                            <li class="flex items-start">
+                                <span class="mr-3 text-charcoal">—</span>
+                                ABN registered with invoices provided
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <div style="margin-top: 3rem;">
-    <h3 style="margin-bottom: 1rem;">What’s Included</h3>
+    <!-- Services Section -->
+    <section id="services" class="py-24 bg-charcoal text-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="font-serif text-4xl md:text-5xl mb-4">Services</h2>
+                <p class="text-gray-400 tracking-widest text-sm uppercase">From Essential to Exceptional</p>
+            </div>
 
-    <p style="font-weight: bold; text-decoration: underline;">Interior</p>
-    <ul style="margin-bottom: 1rem; font-size: 0.9rem; line-height: 1.6;">
-      <li>– Full vacuum</li>
-      <li>– Interior refresh (spray & brush detail)</li>
-      <li>– Floor mats fully cleaned and drilled to remove dirt</li>
-      <li>– Badges & wording detail brushed</li>
-      <li>– Cup holders fully cleaned</li>
-    </ul>
+            <!-- Main Service Categories -->
+            <div class="grid md:grid-cols-3 gap-px bg-gray-800 mb-12">
+                <!-- Silver Detailing -->
+                <div class="bg-charcoal p-8 md:p-10 group hover:bg-gray-900 transition-colors duration-300 flex flex-col">
+                    <div class="mb-8">
+                        <h3 class="font-serif text-2xl mb-2">Silver Detailing</h3>
+                        <p class="text-gray-400 text-sm">Essential Detail Package</p>
+                    </div>
+                    <div class="font-serif text-4xl mb-8">From $250</div>
+                    <ul class="space-y-3 text-gray-300 text-sm mb-8 flex-grow">
+                        <li>Full floor vacuum</li>
+                        <li>Interior refresh & air compressed</li>
+                        <li>Mats deep cleaned</li>
+                        <li>Snow foam pre-wash</li>
+                        <li>Soft-mitt hand wash</li>
+                        <li>Wheel decontamination</li>
+                    </ul>
+                    <button onclick="showPackage('silver-detailing')" class="w-full border border-white/20 py-3 text-sm tracking-widest uppercase hover:bg-white hover:text-charcoal transition-all duration-300">
+                        View Details
+                    </button>
+                </div>
 
-    <p style="font-weight: bold; text-decoration: underline;">Exterior</p>
-    <ul style="margin-bottom: 1rem; font-size: 0.9rem; line-height: 1.6;">
-      <li>– Snow foam pre-wash</li>
-      <li>– Hand washed with soft mitts</li>
-      <li>– Wheels decontaminated + brushed</li>
-      <li>– Exhaust tips cleaned, wheel guards wiped</li>
-      <li>– All windows wiped down</li>
-      <li>– Badges & wording detail brushed</li>
-      <li>– Engine bay fully cleaned</li>
-    </ul>
+                <!-- Ceramic Coating - Coming Soon -->
+                <div class="bg-charcoal p-8 md:p-10 flex flex-col relative overflow-hidden">
+                    <div class="absolute inset-0 coming-soon-overlay z-10 flex items-center justify-center">
+                        <span class="font-serif text-3xl md:text-4xl text-white tracking-widest uppercase border-2 border-white/50 px-6 py-3 bg-black/20">Coming Soon</span>
+                    </div>
+                    <div class="mb-8 opacity-30">
+                        <h3 class="font-serif text-2xl mb-2">Ceramic Coating</h3>
+                        <p class="text-gray-400 text-sm">Premium Protection</p>
+                    </div>
+                    <div class="font-serif text-4xl mb-8 opacity-30">From $800</div>
+                    <ul class="space-y-3 text-gray-300 text-sm mb-8 flex-grow opacity-30">
+                        <li>Paint correction prep</li>
+                        <li>6-12 month ceramic coatings</li>
+                        <li>Hydrophobic protection</li>
+                        <li>Wheel & glass coating</li>
+                        <li>UV & chemical resistance</li>
+                        <li>Showroom finish</li>
+                    </ul>
+                    <button disabled class="w-full bg-white/20 text-white/40 py-3 text-sm tracking-widest uppercase cursor-not-allowed">
+                        View Details
+                    </button>
+                </div>
 
-    <p style="font-weight: bold; text-decoration: underline;">Extras</p>
-    <ul style="font-size: 0.9rem; line-height: 1.6; color: #facc15;">
-      <li>✨ FREE professional photoshoot by <strong>@a6400.aus</strong> (if added)</li>
-      <li>🌬️ FREE air freshener</li>
-    </ul>
-  </div>
-</section>
+                <!-- Cut & Polish - Coming Soon -->
+                <div class="bg-charcoal p-8 md:p-10 flex flex-col relative overflow-hidden">
+                    <div class="absolute inset-0 coming-soon-overlay z-10 flex items-center justify-center">
+                        <span class="font-serif text-3xl md:text-4xl text-white tracking-widest uppercase border-2 border-white/50 px-6 py-3 bg-black/20">Coming Soon</span>
+                    </div>
+                    <div class="mb-8 opacity-30">
+                        <h3 class="font-serif text-2xl mb-2">Cut & Polish</h3>
+                        <p class="text-gray-400 text-sm">Paint Correction</p>
+                    </div>
+                    <div class="font-serif text-4xl mb-8 opacity-30">From $600</div>
+                    <ul class="space-y-3 text-gray-300 text-sm mb-8 flex-grow opacity-30">
+                        <li>Single & multi-stage polish</li>
+                        <li>Scratch & swirl removal</li>
+                        <li>Oxidation correction</li>
+                        <li>Gloss enhancement</li>
+                        <li>Pre-coating preparation</li>
+                        <li>Mirror finish restoration</li>
+                    </ul>
+                    <button disabled class="w-full bg-white/20 text-white/40 py-3 text-sm tracking-widest uppercase cursor-not-allowed">
+                        View Details
+                    </button>
+                </div>
+            </div>
 
+            <!-- Package Tiers Sub-section -->
+            <div id="package-tiers" class="bg-black/30 border border-white/10 p-6 md:p-8">
+                <div class="text-center mb-6">
+                    <p class="text-gray-400 text-sm tracking-widest uppercase mb-4">Select Your Detail Package</p>
+                    <div class="flex flex-wrap justify-center gap-3">
+                        <button onclick="showTier('silver')" id="btn-silver" class="tier-btn px-6 py-2 border border-white/30 text-sm tracking-widest uppercase hover:bg-white hover:text-charcoal transition-all">
+                            Silver
+                        </button>
+                        <button onclick="showTier('diamond')" id="btn-diamond" class="tier-btn px-6 py-2 border border-white/30 text-sm tracking-widest uppercase hover:bg-white hover:text-charcoal transition-all">
+                            Diamond
+                        </button>
+                        <button onclick="showTier('platinum')" id="btn-platinum" class="tier-btn px-6 py-2 border border-white/30 text-sm tracking-widest uppercase hover:bg-white hover:text-charcoal transition-all">
+                            Platinum
+                        </button>
+                    </div>
+                </div>
 
-  <!-- Contact Section -->
-  <section class="section" style="text-align: center;">
-    <h2>Contact</h2>
-    <p class="cta">
-      Call or message Finn directly:<br />
-      <a href="tel:0416419441">0416 419 441</a><br /><br />
-      Or contact Kahlan:<br />
-      <a href="tel:0478916141">0478 916 141</a>
-    </p>
-    <div style="margin-top: 1rem;">
-      <a href="https://www.instagram.com/prestigecardetails/" target="_blank" rel="noopener noreferrer">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" width="30" style="margin: 0 10px;" />
-      </a>
-      <a href="https://www.facebook.com/profile.php?id=61576457576642" target="_blank" rel="noopener noreferrer">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook" width="30" style="margin: 0 10px;" />
-      </a>
-      <a href="https://www.tiktok.com/@prestigecardetails" target="_blank" rel="noopener noreferrer">
-        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fstatic.vecteezy.com%2Fsystem%2Fresources%2Fpreviews%2F042%2F127%2F139%2Fnon_2x%2Fsquare-tiktok-logo-on-a-transparent-background-free-png.png&f=1&nofb=1&ipt=17a164a2a022c4fca028dc8f2e347225860085631163b99110d544819949ef4b" width="30" style="margin: 0 10px;" />
-      </a>
-    </div>
-  </section>
+                <!-- Silver Package Content -->
+                <div id="tier-silver" class="package-content">
+                    <div class="bg-charcoal border border-white/10 p-6 md:p-8">
+                        <div class="text-center mb-6 pb-6 border-b border-white/10">
+                            <h3 class="font-serif text-3xl mb-2">Silver Package</h3>
+                            <p class="text-gray-400 text-sm tracking-widest uppercase">Essential Detail</p>
+                            <p class="font-serif text-2xl mt-4 text-white">From $250</p>
+                        </div>
+                        
+                        <div class="grid md:grid-cols-2 gap-8">
+                            <div>
+                                <h4 class="text-lg font-medium mb-4 text-white border-b border-white/20 pb-2">Interior:</h4>
+                                <ul class="space-y-2 text-gray-300 text-sm">
+                                    <li class="flex items-start"><span class="mr-2 text-white">—</span>Full floor vacuum</li>
+                                    <li class="flex items-start"><span class="mr-2 text-white">—</span>Interior refresh (spray & brush + air compressed)</li>
+                                    <li class="flex items-start"><span class="mr-2 text-white">—</span>Mats deep cleaned</li>
+                                    <li class="flex items-start"><span class="mr-2 text-white">—</span>Air vents dusted</li>
+                                    <li class="flex items-start"><span class="mr-2 text-white">—</span>All glass cleaned</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-medium mb-4 text-white border-b border-white/20 pb-2">Exterior:</h4>
+                                <ul class="space-y-2 text-gray-300 text-sm">
+                                    <li class="flex items-start"><span class="mr-2 text-white">—</span>Snow foam pre-wash</li>
+                                    <li class="flex items-start"><span class="mr-2 text-white">—</span>Soft-mitt hand wash</li>
+                                    <li class="flex items-start"><span class="mr-2 text-white">—</span>Wheel decontamination + brush process</li>
+                                    <li class="flex items-start"><span class="mr-2 text-white">—</span>Exhaust tips cleaned</li>
+                                    <li class="flex items-start"><span class="mr-2 text-white">—</span>Windows wiped</li>
+                                    <li class="flex items-start"><span class="mr-2 text-white">—</span>Tyre shine</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-  <footer class="contact">
-    <p>&copy; 2025 Prestige Car Details. Built with discipline and style.</p>
-  </footer>
+                <!-- Diamond Package Content (formerly Gold) -->
+                <div id="tier-diamond" class="package-content">
+                    <div class="bg-charcoal border border-white/10 p-6 md:p-8">
+                        <div class="text-center mb-6 pb-6 border-b border-white/10">
+                            <h3 class="font-serif text-3xl mb-2">Diamond Package</h3>
+                            <p class="text-gray-400 text-sm tracking-widest uppercase">Premium Detail</p>
+                            <p class="font-serif text-2xl mt-4 text-white">From $320</p>
+                        </div>
+                        
+                        <div class="grid md:grid-cols-2 gap-8">
+                            <div>
+                                <h4 class="text-lg font-medium mb-4 text-white border-b border-white/20 pb-2">Interior:</h4>
+                                <ul class="space-y-2 text-gray-300 text-sm">
+                                    <li class="flex items-start"><span class="mr-2 text-white">—</span>Full vacuum (seats, boot, compartments, floor)</li>
+                                    <li class="flex items-start"><span class="mr-2 text-white">—</span>Deep interior refresh with spray, soft brushing, full wipe down</li>
+                                    <li class="flex items-start"><span class="mr-2 text-white">—</span>Crevices air-compression</li>
+                                    <li class="flex items-start"><span class="mr-2 text-white">—</span>Mats deep cleaned drilled & extracted where needed</li>
+                                    <li class="flex items-start"><span class="mr-2 text-white">—</span>Interior plastics cleaned & dressed</li>
+                                    <li class="flex items-start"><span class="mr-2 text-white">—</span>Air vents dusted & air-compressed</li>
+                                    <li class="flex items-start"><span class="mr-2 text-white">—</span>All glass cleaned</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-medium mb-4 text-white border-b border-white/20 pb-2">Exterior:</h4>
+                                <ul class="space-y-2 text-gray-300 text-sm">
+                                    <li class="flex items-start"><span class="mr-2 text-white">—</span>Snow foam pre-wash</li>
+                                    <li class="flex items-start"><span class="mr-2 text-white">—</span>2 bucket Soft-mitt hand wash</li>
+                                    <li class="flex items-start"><span class="mr-2 text-white">—</span>Wheels iron-decontaminated + detailed</li>
+                                    <li class="flex items-start"><span class="mr-2 text-white">—</span>Tyres & guards cleaned</li>
+                                    <li class="flex items-start"><span class="mr-2 text-white">—</span>Exhaust tips polished</li>
+                                    <li class="flex items-start"><span class="mr-2 text-white">—</span>Exterior plastics cleaned</li>
+                                    <li class="flex items-start"><span class="mr-2 text-white">—</span>Windows wiped</li>
+                                    <li class="flex items-start"><span class="mr-2 text-white">—</span>Tyre shine</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-  <!-- Booking Form Modal -->
-  <div id="bookingModal">
-    <form
-      class="booking-form"
-      action="https://formsubmit.co/prestigecardetails101@gmail.com"
-      method="POST"
-    >
-      <button type="button" class="close-btn" id="closeBookingBtn" aria-label="Close form">&times;</button>
-      <h3>Book Your Detail</h3>
-      <label for="name">Full Name</label>
-      <input type="text" id="name" name="name" required />
+                <!-- Platinum Package Content -->
+                <div id="tier-platinum" class="package-content">
+                    <div class="bg-charcoal border border-white/10 p-6 md:p-8">
+                        <div class="text-center mb-6 pb-6 border-b border-white/10">
+                            <h3 class="font-serif text-3xl mb-2">Platinum Package</h3>
+                            <p class="text-gray-400 text-sm tracking-widest uppercase">Prestige Full Detail</p>
+                            <p class="font-serif text-2xl mt-4 text-white">From $400</p>
+                        </div>
+                        
+                        <div class="grid md:grid-cols-2 gap-8">
+                            <div>
+                                <h4 class="text-lg font-medium mb-4 text-white border-b border-white/20 pb-2">Interior:</h4>
+                                <ul class="space-y-2 text-gray-300 text-sm">
+                                    <li class="flex items-start"><span class="mr-2 text-white">—</span>Full Deep vacuum (seats, boot, compartments, floor)</li>
+                                    <li class="flex items-start"><span class="mr-2 text-white">—</span>Full steam clean</li>
+                                    <li class="flex items-start"><span class="mr-2 text-white">—</span>Full interior brush & compression detail</li>
+                                    <li class="flex items-start"><span class="mr-2 text-white">—</span>Mats fully restored</li>
+                                    <li class="flex items-start"><span class="mr-2 text-white">—</span>Leather cleaned & conditioned (if applicable)</li>
+                                    <li class="flex items-start"><span class="mr-2 text-white">—</span>Interior plastics rejuvenated</li>
+                                    <li class="flex items-start"><span class="mr-2 text-white">—</span>Air vents dusted & air-compressed</li>
+                                    <li class="flex items-start"><span class="mr-2 text-white">—</span>Glass & mirrors cleaned</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-medium mb-4 text-white border-b border-white/20 pb-2">Exterior:</h4>
+                                <ul class="space-y-2 text-gray-300 text-sm">
+                                    <li class="flex items-start"><span class="mr-2 text-white">—</span>Pre-rinse + snow foam</li>
+                                    <li class="flex items-start"><span class="mr-2 text-white">—</span>2 bucket Soft-mitt contact wash with soft mitts</li>
+                                    <li class="flex items-start"><span class="mr-2 text-white">—</span>Wheel decontamination (iron + brake dust)</li>
+                                    <li class="flex items-start"><span class="mr-2 text-white">—</span>Wheel faces & barrels brushed</li>
+                                    <li class="flex items-start"><span class="mr-2 text-white">—</span>Tyres + guards cleaned</li>
+                                    <li class="flex items-start"><span class="mr-2 text-white">—</span>Exhaust tips polished</li>
+                                    <li class="flex items-start"><span class="mr-2 text-white">—</span>Windows cleaned</li>
+                                    <li class="flex items-start"><span class="mr-2 text-white">—</span>Protectant applied (up to 3-6 months protection)</li>
+                                    <li class="flex items-start"><span class="mr-2 text-white">—</span>Tyre shine</li>
+                                    <li class="flex items-start"><span class="mr-2 text-white">—</span>Door jams detailed (brush, steamed, sprayed)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-      <label for="email">Email</label>
-      <input type="email" id="email" name="email" required />
+    <!-- Contact Section -->
+    <section id="contact" class="py-24 md:py-32 bg-sand">
+        <div class="max-w-3xl mx-auto px-6 text-center">
+            <h2 class="font-serif text-4xl md:text-5xl mb-6">Book Your Detail</h2>
+            <p class="text-stone mb-12">Servicing Gold Coast - Byron Bay. We come to you.</p>
+            <form class="space-y-6 text-left" onsubmit="event.preventDefault(); alert('Thank you for your inquiry. We will contact you shortly.');">
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div>
+                        <label class="block text-xs tracking-widest uppercase mb-2 text-stone">Name</label>
+                        <input type="text" class="w-full bg-white border-0 p-4 focus:ring-1 focus:ring-charcoal outline-none" placeholder="Your name">
+                    </div>
+                    <div>
+                        <label class="block text-xs tracking-widest uppercase mb-2 text-stone">Phone</label>
+                        <input type="tel" class="w-full bg-white border-0 p-4 focus:ring-1 focus:ring-charcoal outline-none" placeholder="Contact number">
+                    </div>
+                </div>
+                <div>
+                    <label class="block text-xs tracking-widest uppercase mb-2 text-stone">Service</label>
+                    <select class="w-full bg-white border-0 p-4 focus:ring-1 focus:ring-charcoal outline-none text-stone">
+                        <option>Select a package...</option>
+                        <option>Silver Detail - From $250</option>
+                        <option>Diamond Detail - From $320</option>
+                        <option>Platinum Detail - From $400</option>
+                        <option>Ceramic Coating - From $800 (Coming Soon)</option>
+                        <option>Cut & Polish - From $600 (Coming Soon)</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="block text-xs tracking-widest uppercase mb-2 text-stone">Message</label>
+                    <textarea rows="4" class="w-full bg-white border-0 p-4 focus:ring-1 focus:ring-charcoal outline-none" placeholder="Vehicle details, location, preferred date..."></textarea>
+                </div>
+                <button type="submit" class="w-full bg-charcoal text-white py-4 text-sm tracking-widest uppercase hover:bg-black transition-all duration-300">
+                    Request Booking
+                </button>
+            </form>
+        </div>
+    </section>
 
-      <label for="phone">Phone Number</label>
-      <input type="tel" id="phone" name="phone" required />
+    <!-- Footer -->
+    <footer class="bg-charcoal text-white py-12 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
+            <img src="your-logo.png" 
+                 alt="Prestige Car Details" 
+                 class="h-8 w-auto object-contain filter invert opacity-90"
+                 onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+            <span class="font-serif text-2xl hidden">Prestige Car Details</span>
+            
+            <div class="text-gray-400 text-sm text-center md:text-right">
+                <p>Mobile Detailing | Ceramic Coating | Paint Correction</p>
+                <p class="mt-1">Gold Coast - Byron Bay</p>
+            </div>
+        </div>
+    </footer>
 
-      <label for="vehicle">Vehicle Make & Model</label>
-      <input type="text" id="vehicle" name="vehicle" required />
+    <script>
+        // Counter Animation
+        const counters = document.querySelectorAll('.counter-value');
+        const speed = 200;
 
-      <label for="details">Additional Details</label>
-      <textarea id="details" name="details" rows="3"></textarea>
+        const animateCounters = () => {
+            counters.forEach(counter => {
+                const target = +counter.getAttribute('data-target');
+                const count = +counter.innerText;
+                const inc = target / speed;
 
-      <!-- Hidden input to prevent captcha on formsubmit.co -->
-      <input type="hidden" name="_captcha" value="false" />
+                if (count < target) {
+                    counter.innerText = Math.ceil(count + inc);
+                    setTimeout(animateCounters, 20);
+                } else {
+                    counter.innerText = target;
+                }
+            });
+        };
 
-      <button type="submit">Send Booking</button>
-    </form>
-  </div>
+        const observerOptions = {
+            threshold: 0.5
+        };
 
-  <script>
-    const bookingModal = document.getElementById('bookingModal');
-    const openBookingBtn = document.getElementById('openBookingBtn');
-    const closeBookingBtn = document.getElementById('closeBookingBtn');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    animateCounters();
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
 
-    openBookingBtn.addEventListener('click', () => {
-      bookingModal.classList.add('active');
-      document.body.style.overflow = 'hidden'; // Prevent background scroll
-    });
+        const statsSection = document.getElementById('stats');
+        if (statsSection) {
+            observer.observe(statsSection);
+        }
 
-    closeBookingBtn.addEventListener('click', () => {
-      bookingModal.classList.remove('active');
-      document.body.style.overflow = '';
-    });
+        // Package Tier Toggle
+        function showPackage(type) {
+            document.getElementById('package-tiers').scrollIntoView({behavior: 'smooth', block: 'nearest'});
+            if (type === 'silver-detailing') {
+                showTier('silver');
+            }
+        }
 
-    // Close modal if clicking outside form
-    bookingModal.addEventListener('click', (e) => {
-      if (e.target === bookingModal) {
-        bookingModal.classList.remove('active');
-        document.body.style.overflow = '';
-      }
-    });
-  </script>
+        function showTier(tier) {
+            document.querySelectorAll('.package-content').forEach(el => {
+                el.classList.remove('active');
+            });
+            document.querySelectorAll('.tier-btn').forEach(el => {
+                el.classList.remove('active');
+            });
+            
+            document.getElementById('tier-' + tier).classList.add('active');
+            document.getElementById('btn-' + tier).classList.add('active');
+        }
+
+        showTier('silver');
+
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
 </body>
 </html>
-</body>
-</html>
-
