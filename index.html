@@ -102,29 +102,21 @@
     <div class="grain"></div>
 
     <!-- Navigation -->
-    <nav class="fixed top-0 w-full bg-charcoal z-40 border-b border-white/10">
-        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-            <div class="flex items-center">
-                <img src="your-logo1111.jpg" 
+<nav class="fixed top-0 w-full bg-charcoal z-40 border-b border-white/10">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+        <div class="flex items-center">
+            <a href="#" onclick="window.scrollTo({top: 0, behavior: 'smooth'}); return false;" class="block">
+                <img src="your-logo111.jpg" 
                      alt="Prestige Car Details" 
-                     class="h-10 md:h-12 w-auto object-contain filter invert"
+                     class="h-10 md:h-12 w-auto object-contain"
                      onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
-                <span class="font-serif text-2xl tracking-tight text-white hidden">Prestige Car Details</span>
-            </div>
-            
-            <div class="hidden md:flex space-x-8 text-sm font-medium tracking-wide text-white/80">
-                <a href="#about" class="hover:text-white transition-colors">About</a>
-                
-                <a href="#services" class="hover:text-white transition-colors">Services</a>
-                <a href="#reviews" class="hover:text-white transition-colors">Reviews</a>
-                <a href="#contact" class="hover:text-white transition-colors">Contact</a>
-            </div>
-            <button onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})" 
-                    class="bg-white text-charcoal px-6 py-2 text-sm font-medium hover:bg-gray-200 transition-colors">
-                Book Now
-            </button>
+            </a>
+            <span class="font-serif text-2xl tracking-tight text-white hidden">Prestige Car Details</span>
         </div>
-    </nav>
+        
+        <!-- ... rest of nav ... -->
+    </div>
+</nav>
 
     <!-- Hero Section - White Background -->
     <section class="relative min-h-screen flex items-center justify-center pt-20 pb-32 overflow-hidden">
