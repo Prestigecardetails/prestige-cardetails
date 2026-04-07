@@ -114,8 +114,9 @@
             
             <div class="hidden md:flex space-x-8 text-sm font-medium tracking-wide text-white/80">
                 <a href="#about" class="hover:text-white transition-colors">About</a>
+                
                 <a href="#services" class="hover:text-white transition-colors">Services</a>
-                <a href="#stats" class="hover:text-white transition-colors">Results</a>
+                <a href="#reviews" class="hover:text-white transition-colors">Reviews</a>
                 <a href="#contact" class="hover:text-white transition-colors">Contact</a>
             </div>
             <button onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})" 
@@ -185,69 +186,146 @@
             </div>
         </div>
     </section>
-
-    <!-- About Section -->
-    <section id="about" class="py-24 md:py-32 bg-white">
+    <!-- Reviews Section -->
+    <section id="reviews" class="py-24 bg-sand">
         <div class="max-w-7xl mx-auto px-6">
-            <div class="grid md:grid-cols-2 gap-16 items-start">
-                <div class="md:sticky md:top-32 mb-8 md:mb-0">
-                    <h2 class="font-serif text-4xl md:text-5xl mb-6">What We Do</h2>
-                    <div class="w-16 h-px bg-charcoal mb-8"></div>
+            <div class="text-center mb-16">
+                <h2 class="font-serif text-4xl md:text-5xl mb-4">What Clients Say</h2>
+                <div class="w-16 h-px bg-charcoal mx-auto mb-6"></div>
+                <div class="flex justify-center items-center gap-2">
+                    <div class="flex text-yellow-500">
+                        <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                    </div>
+                    <span class="text-stone ml-2">5.0 Google Rating</span>
                 </div>
-                <div class="space-y-12">
-                    <div class="prose prose-lg max-w-none">
-                        <p class="text-xl leading-relaxed text-stone font-light">
-                            We specialise in high-end mobile detailing for prestige vehicles across the Gold Coast and Byron Bay regions. 
-                            No shortcuts — just pure focus on deep, thorough interior and exterior detailing using air compression, 
-                            full vacuum wipe-downs, and precise finishing.
-                        </p>
-                    </div>
-                    <div>
-                        <h3 class="font-serif text-2xl mb-4">Why Choose Us</h3>
-                        <p class="text-stone leading-relaxed mb-6">
-                            Inspired by German standards of excellence, we value efficiency, precision, and presentation. 
-                            Every detail matters — from the door jambs to the dash. We arrive on time, work clean, and leave 
-                            your vehicle feeling showroom-ready.
-                        </p>
-                    </div>
-                    <div class="bg-sand p-8 md:p-10">
-                        <h3 class="font-serif text-2xl mb-4">Presentation & Professionalism</h3>
-                        <ul class="space-y-4 text-stone">
-                            <li class="flex items-start">
-                                <span class="mr-3 text-charcoal">—</span>
-                                All-black professional uniform with branded business shirts
-                            </li>
-                            <li class="flex items-start">
-                                <span class="mr-3 text-charcoal">—</span>
-                                Gloves always worn for hygiene and care
-                            </li>
-                            <li class="flex items-start">
-                                <span class="mr-3 text-charcoal">—</span>
-                                Seamless tap-to-pay via phone, cash, or bank transfer
-                            </li>
-                            
-                        </ul>
+            </div>
 
-                        <!-- Trust Badges -->
-                        <div class="mt-6 pt-6 border-t border-charcoal/10 space-y-3">
-                            <div class="flex items-center gap-3 text-charcoal">
-                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/>
-                                </svg>
-                                <span class="font-medium tracking-wide">ABN Registered Business</span>
-                            </div>
-                            <div class="flex items-center gap-3 text-charcoal">
-                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
-                                </svg>
-                                <span class="font-medium tracking-wide">Invoices Provided</span>
-                            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-white p-8 shadow-sm">
+                    <div class="flex text-yellow-500 mb-4">
+                        <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                    </div>
+                    <p class="text-charcoal mb-4 leading-relaxed">"We used Prestige Car Details recently to give my car a full detail inside and out. The car looks amazing, we are pleased that we selected Prestige Car Details. Finn was very professional and a very polite gentleman who knows what he is doing when it comes to detailing a vehicle. I highly recommend Finn and Prestige Car Details"</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-gray-200 flex items-center justify-center text-charcoal font-medium">JG</div>
+                        <div>
+                            <p class="font-medium text-charcoal">Bill L.</p>
+                            <p class="text-xs text-stone">Verified Google Review</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white p-8 shadow-sm">
+                    <div class="flex text-yellow-500 mb-4">
+                        <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                    </div>
+                    <p class="text-charcoal mb-4 leading-relaxed">"Amazing overall service, have went through prestige car details multiple times now and they never disappoint."</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-gray-200 flex items-center justify-center text-charcoal font-medium">BL</div>
+                        <div>
+                            <p class="font-medium text-charcoal">Jake G.</p>
+                            <p class="text-xs text-stone">Verified Google Review</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white p-8 shadow-sm">
+                    <div class="flex text-yellow-500 mb-4">
+                        <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                    </div>
+                    <p class="text-charcoal mb-4 leading-relaxed">"Booked in a full interior and exterior detail after the car was left very dirty for a long period of time. Finn absolutely smashed it and made the car looking new inside and out in no time. Very thankful for the amazing job Finn did."</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-gray-200 flex items-center justify-center text-charcoal font-medium">SS</div>
+                        <div>
+                            <p class="font-medium text-charcoal">Ethan W.</p>
+                            <p class="text-xs text-stone">Verified Google Review</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white p-8 shadow-sm">
+                    <div class="flex text-yellow-500 mb-4">
+                        <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                    </div>
+                    <p class="text-charcoal mb-4 leading-relaxed">"Just got my car detailed with prestige car detailing and it turned out amazing definitely recommend prestige car detailing!"</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-gray-200 flex items-center justify-center text-charcoal font-medium">JZ</div>
+                        <div>
+                            <p class="font-medium text-charcoal">Jack Z.</p>
+                            <p class="text-xs text-stone">Verified Google Review</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white p-8 shadow-sm">
+                    <div class="flex text-yellow-500 mb-4">
+                        <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                    </div>
+                    <p class="text-charcoal mb-4 leading-relaxed">"I chose prestige car detail's, Finn did an excellent job on my Lexus. Would recommend."</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-gray-200 flex items-center justify-center text-charcoal font-medium">EW</div>
+                        <div>
+                            <p class="font-medium text-charcoal">Charlie L.</p>
+                            <p class="text-xs text-stone">Verified Google Review</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white p-8 shadow-sm">
+                    <div class="flex text-yellow-500 mb-4">
+                        <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                    </div>
+                    <p class="text-charcoal mb-4 leading-relaxed">"Booked them for my car as a surprise and I never expected the result. The interior looks and smells brand new, I will definitely be using them regularly."</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-gray-200 flex items-center justify-center text-charcoal font-medium">F</div>
+                        <div>
+                            <p class="font-medium text-charcoal">Stig S.</p>
+                            <p class="text-xs text-stone">Customer</p>
                         </div>
                     </div>
                 </div>
             </div>
+
+            <div class="text-center mt-12">
+                <a href="https://g.page/r/your-google-review-link" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-charcoal hover:text-stone transition-colors">
+                    <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12.545,10.239v3.821h5.445c-0.712,2.315-2.647,3.972-5.445,3.972c-3.332,0-6.033-2.701-6.033-6.032s2.701-6.032,6.033-6.032c1.498,0,2.866,0.549,3.921,1.453l2.814-2.814C17.503,2.988,15.139,2,12.545,2C7.021,2,2.543,6.477,2.543,12s4.478,10,10.002,10c8.396,0,10.249-7.85,9.426-11.748L12.545,10.239z"/>
+                    </svg>
+                    <span class="text-sm tracking-widest uppercase">View All Reviews on Google</span>
+                </a>
+            </div>
         </div>
     </section>
+
+
 
     <!-- Services Section -->
     <section id="services" class="py-24 bg-charcoal text-white">
@@ -472,7 +550,20 @@
     <section id="contact" class="py-24 md:py-32 bg-sand">
         <div class="max-w-3xl mx-auto px-6 text-center">
             <h2 class="font-serif text-4xl md:text-5xl mb-6">Book Your Detail</h2>
-            <p class="text-stone mb-12">Servicing Gold Coast - Byron Bay. We come to you.</p>
+            <p class="text-stone mb-6">Servicing Gold Coast - Byron Bay. We come to you.</p>
+
+            <!-- Urgency Message -->
+            <div class="inline-flex items-center gap-2 bg-red-600 text-white px-5 py-3 rounded-full mb-8 shadow-lg">
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd"/>
+                </svg>
+                <span class="text-sm font-bold tracking-wide"><span id="spots-left">3</span> spots left this week — Book now!</span>
+            </div>
+
+            <script>
+                // Randomize spots left between 2-5
+                document.getElementById('spots-left').textContent = Math.floor(Math.random() * 4) + 2;
+            </script>
             
             <!-- Formspree Form -->
                         <!-- Social Media Links -->
@@ -562,21 +653,23 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-charcoal text-white py-12 border-t border-gray-800">
-        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
-            <img src="your-logo.png" 
-                 alt="Prestige Car Details" 
-                 class="h-8 w-auto object-contain filter invert opacity-90"
-                 onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
-            <span class="font-serif text-2xl hidden">Prestige Car Details</span>
-            
-            <div class="text-gray-400 text-sm text-center md:text-right">
-                <p>Mobile Detailing | Ceramic Coating | Paint Correction</p>
-                <p class="mt-1">Gold Coast - Byron Bay</p>
-                <div class="mt-3 flex items-center justify-center md:justify-end gap-2 text-white/60">
-                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/>
-                    </svg>
+        <footer class="bg-charcoal text-white py-4 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-3">
+                <span class="font-serif text-base text-white/90">Prestige Car Details</span>
+
+                <!-- Payment Icons - all in one row -->
+                <div class="flex items-center gap-1.5">
+                    <div class="w-10 h-6 bg-white rounded flex items-center justify-center"><span class="text-blue-900 font-bold text-xs italic">VISA</span></div>
+                    <div class="w-10 h-6 bg-white rounded flex items-center justify-center p-0.5"><svg class="w-full h-full" viewBox="0 0 48 32"><circle cx="18" cy="16" r="10" fill="#EB001B"/><circle cx="30" cy="16" r="10" fill="#F79E1B"/><path d="M24 7c3 2.5 4.5 5.5 4.5 9s-1.5 6.5-4.5 9c-3-2.5-4.5-5.5-4.5-9s1.5-6.5 4.5-9z" fill="#FF5F00"/></svg></div>
+                    <div class="w-10 h-6 bg-black rounded flex items-center justify-center border border-gray-700"><span class="text-white text-xs">Pay</span></div>
+                    <div class="w-10 h-6 bg-white rounded flex items-center justify-center"><span class="text-xs"><span class="text-blue-500">G</span><span class="text-red-500">o</span><span class="text-yellow-500">o</span><span class="text-blue-500">g</span><span class="text-green-500">l</span><span class="text-red-500">e</span></span></div>
+                    <div class="w-10 h-6 bg-green-600 rounded flex items-center justify-center text-white font-bold text-sm">$</div>
+                    <div class="w-10 h-6 bg-blue-600 rounded flex items-center justify-center text-white"><svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 14v3m4-3v3m4-3v3M3 21h18M3 10h18M3 7l9-4 9 4M4 10h16v11H4V10z"/></svg></div>
+                </div>
+
+                <div class="flex items-center gap-1.5 text-white/60 text-xs">
+                    <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg>
                     <span class="tracking-wider">ABN Registered</span>
                 </div>
             </div>
@@ -584,6 +677,16 @@
     </footer>
 
     <script>
+        // Gallery Carousel Scroll
+        function scrollGallery(direction) {
+            const carousel = document.getElementById('gallery-carousel');
+            const scrollAmount = 400;
+            carousel.scrollBy({
+                left: direction * scrollAmount,
+                behavior: 'smooth'
+            });
+        }
+
         // Counter Animation
         const counters = document.querySelectorAll('.counter-value');
         const speed = 200;
