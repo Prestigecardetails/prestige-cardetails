@@ -104,20 +104,71 @@
     <!-- Navigation -->
 <nav class="fixed top-0 w-full bg-charcoal z-40 border-b border-white/10">
     <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-        <div class="flex items-center">
-            <a href="#" onclick="window.scrollTo({top: 0, behavior: 'smooth'}); return false;" class="block">
-                <img src="your-logo111.jpg" 
-                     alt="Prestige Car Details" 
-                     class="h-10 md:h-12 w-auto object-contain"
-                     onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
-            </a>
+        <!-- Logo - Clickable to top -->
+        <a href="#" onclick="window.scrollTo({top: 0, behavior: 'smooth'}); return false;" class="flex items-center">
+            <img src="your-logo1111.jpg" 
+                 alt="Prestige Car Details" 
+                 class="h-10 md:h-12 w-auto object-contain filter invert"
+                 onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
             <span class="font-serif text-2xl tracking-tight text-white hidden">Prestige Car Details</span>
+        </a>
+        
+        <!-- Desktop Navigation -->
+        <div class="hidden md:flex space-x-8 text-sm font-medium tracking-wide text-white/80">
+            <a href="#about" class="hover:text-white transition-colors">About</a>
+            <a href="#services" class="hover:text-white transition-colors">Services</a>
+            <a href="#reviews" class="hover:text-white transition-colors">Reviews</a>
+            <a href="#contact" class="hover:text-white transition-colors">Contact</a>
         </div>
         
-        <!-- ... rest of nav ... -->
+        <!-- Desktop Book Now Button -->
+        <button onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})" 
+                class="hidden md:block bg-white text-charcoal px-6 py-2 text-sm font-medium hover:bg-gray-200 transition-colors">
+            Book Now
+        </button>
+        
+        <!-- Mobile Menu Button -->
+        <button id="mobile-menu-btn" class="md:hidden text-white p-2" onclick="toggleMobileMenu()">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+            </svg>
+        </button>
+    </div>
+    
+    <!-- Mobile Menu Dropdown -->
+    <div id="mobile-menu" class="hidden md:hidden bg-charcoal border-t border-white/10">
+        <div class="px-6 py-4 space-y-4">
+            <a href="#about" class="block text-white/80 hover:text-white transition-colors" onclick="closeMobileMenu()">About</a>
+            <a href="#services" class="block text-white/80 hover:text-white transition-colors" onclick="closeMobileMenu()">Services</a>
+            <a href="#reviews" class="block text-white/80 hover:text-white transition-colors" onclick="closeMobileMenu()">Reviews</a>
+            <a href="#contact" class="block text-white/80 hover:text-white transition-colors" onclick="closeMobileMenu()">Contact</a>
+            <button onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'}); closeMobileMenu();" 
+                    class="w-full bg-white text-charcoal px-6 py-2 text-sm font-medium hover:bg-gray-200 transition-colors">
+                Book Now
+            </button>
+        </div>
     </div>
 </nav>
 
+<script>
+    function toggleMobileMenu() {
+        const menu = document.getElementById('mobile-menu');
+        menu.classList.toggle('hidden');
+    }
+    
+    function closeMobileMenu() {
+        document.getElementById('mobile-menu').classList.add('hidden');
+    }
+    
+    // Close menu when clicking outside
+    document.addEventListener('click', function(event) {
+        const menu = document.getElementById('mobile-menu');
+        const btn = document.getElementById('mobile-menu-btn');
+        if (!menu.contains(event.target) && !btn.contains(event.target)) {
+            menu.classList.add('hidden');
+        }
+    });
+</script>
     <!-- Hero Section - White Background -->
     <section class="relative min-h-screen flex items-center justify-center pt-20 pb-32 overflow-hidden">
         <div class="absolute inset-0 z-0">
